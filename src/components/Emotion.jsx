@@ -17,7 +17,7 @@ export const Emotion = () => {
   // インラインスタイルの書き方
   const titleStyle = css({
     margin: 0,
-    color: "#aaa"
+    color: "#aaa" // 文字列として書くので「""」が必要
   });
 
   return (
@@ -28,6 +28,7 @@ export const Emotion = () => {
   );
 };
 // styled-componentsの書き方
+// Emotionの書き方と混ぜて使用できる
 const SButton = styled.button`
   background-color: #ddd;
   border: none;
